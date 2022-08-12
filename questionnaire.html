@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос для владельцев котов</title>
+</head>
+
+<body>
+    <h1>Опрос для владельцев котов</h1>
+<p>Кличка питомца: <input type="text" name="catname" placeholder="Барсик" /> </p>
+<fieldset>
+<p>Имя владельца: <input type="text" name="ownername" placeholder="Иван" /> </p>
+<p>Контакты: <input type="text" name="contact" /> </p>
+</fieldset>
+<p>Порода питомца: 
+    <select>
+        <option value="option1" selected="selected">сиамская</option>
+        <option value="option2">персидская</option>
+        <option value="option3">сибирская</option>
+    </select>
+</p>
+<p>Чем питается: <br/>
+    <input type="checkbox" name="food" value="1" /> сухой корм <br />
+    <input type="checkbox" name="food" value="2" /> влажный корм <br />
+    <input type="checkbox" name="food" value="3" /> натуральный корм 
+</p>
+Пол питомца: <br />
+<label for="m"> самец</label>
+<input type="radio" name="sex" id="m" /> <br />
+<label for="f"> самка</label>
+<input type="radio" name="sex" id="f" />
+<p><label for="comments">Комментарий владельца:</label> <br />
+<textarea name="comments" id="comments" rows="5" cols="20">Комментарий</textarea></p>
+<p>Фото питомца: </p>
+<input type="file"/>
+<p><input type="button" value="Сохранить"/> </p>
+</body>
+</html>
